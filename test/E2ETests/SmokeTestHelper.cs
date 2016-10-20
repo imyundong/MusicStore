@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Server.Testing;
+using Microsoft.AspNetCore.Server.IntegrationTesting;
 using Microsoft.Extensions.Logging;
 using Xunit;
 
@@ -15,7 +15,7 @@ namespace E2ETests
             var httpClient = new HttpClient(httpClientHandler)
             {
                 BaseAddress = new Uri(deploymentResult.ApplicationBaseUri),
-                Timeout = TimeSpan.FromSeconds(5),
+                Timeout = TimeSpan.FromSeconds(15),
             };
 
             using (httpClient)

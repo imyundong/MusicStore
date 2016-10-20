@@ -1,18 +1,13 @@
 {
   "buildOptions": {
-    "warningsAsErrors": true,
-    "compile": {
-      "include": [
-        "../../shared/**/*.cs"
-      ]
-    }
+    "warningsAsErrors": true
   },
   "dependencies": {
     "dotnet-test-xunit": "2.2.0-*",
     "Microsoft.AspNetCore.Authentication.Cookies": "1.1.0-*",
     "Microsoft.AspNetCore.Authentication.OpenIdConnect": "1.1.0-*",
     "Microsoft.AspNetCore.Identity": "1.1.0-*",
-    "Microsoft.AspNetCore.Server.Testing": "0.2.0-*",
+    "Microsoft.AspNetCore.Server.IntegrationTesting": "0.2.0-*",
     "Microsoft.AspNetCore.WebUtilities": "1.1.0-*",
     "Microsoft.Extensions.Configuration.Binder": "1.1.0-*",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.0-*",
@@ -21,15 +16,15 @@
     "Microsoft.Extensions.Logging": "1.1.0-*",
     "Microsoft.Extensions.Logging.Console": "1.1.0-*",
     "Microsoft.NETCore.App": {
-      "version": "1.0.0-*",
+      "version": "1.1.0-*",
       "type": "platform"
     },
-    "System.Data.SqlClient": "4.1.0-*",
-    "System.Xml.XmlDocument": "4.0.1-*",
+    "System.Data.SqlClient": "4.3.0-*",
+    "System.Xml.XmlDocument": "4.3.0-*",
     "xunit": "2.2.0-*"
   },
   "frameworks": {
-    "netcoreapp1.0": {}
+    "netcoreapp1.1": {}
   },
   "tools": {
     "Microsoft.Extensions.SecretManager.Tools": "1.0.0-*"
